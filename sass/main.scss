@@ -1,0 +1,290 @@
+@import './colors';
+*,
+* ::before,
+*::after * {
+	box-sizing: border-box;
+	margin: 0;
+	top: 0;
+}
+
+html {
+	scroll-padding-top: 112px;
+}
+
+body {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.shadow-bg {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar {
+	--bs-navbar-active-color: #{var(--first-color)};
+
+	z-index: 5;
+	transition: background-color 0.7s;
+}
+
+.container {
+	.nav-link {
+		text-transform: uppercase;
+	}
+
+	.navbar-brand {
+		margin: 0;
+	}
+
+	.ti {
+		font-size: 60px;
+		margin-right: 10px;
+		color: var(--white-color);
+	}
+
+	.fa-bars {
+		color: var(--white-color);
+		padding: 10px;
+		font-size: 30px;
+	}
+}
+
+.blue-text-logo {
+	color: var(--first-color);
+	font-size: 36px;
+	font-weight: 800;
+}
+
+.blue-text-front {
+	color: var(--first-color);
+	font-size: 70px;
+	font-weight: 800;
+	text-shadow: 2px 10px 14px rgba(13, 84, 190, 0.8);
+}
+
+h1,
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+}
+
+.header {
+	color: var(--white-color);
+
+	.hero-img {
+		position: relative;
+		height: 100vh;
+		background-image: url('../img/scuba-diving-big.jpg');
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+	}
+
+	.hero-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -1;
+	}
+
+	.hero-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+		padding: 10px;
+		text-align: center;
+		z-index: 1;
+	}
+
+	.info-front {
+		font-size: 24px;
+		font-weight: 600;
+		letter-spacing: 1px;
+	}
+
+	.btn-outline-light {
+		text-transform: uppercase;
+	}
+
+	.fa-chevron-down {
+		position: absolute;
+		bottom: 20px;
+		font-size: 34px;
+		left: 50%;
+		transform: translate(-50%);
+		color: var(--white-color);
+	}
+}
+
+.aboutus {
+	.underline {
+		margin: 0 auto 40px;
+		width: 12%;
+		height: 4px;
+		background-color: var(--first-color);
+	}
+
+	.fa-solid,
+	.fa-brands {
+		margin-top: 20px;
+		font-size: 40px;
+		color: rgba(0, 0, 0, 0.75);
+	}
+
+	.aboutus-card-title {
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+
+	.aboutus-card-text {
+		font-size: 14px;
+	}
+
+	.aboutus-hover {
+		&:hover {
+			p,
+			.fa {
+				color: var(--first-color);
+			}
+		}
+	}
+}
+
+//sekcja nurkowanie to nasza pasja
+
+.underline {
+	margin: 0 auto 40px;
+	width: 46%;
+	height: 4px;
+	background-color: var(--first-color);
+}
+.diver {
+	width: 100%;
+	margin: 10px 0px;
+	border: 3px solid var(--first-color);
+	border-radius: 25px;
+}
+
+.aboutus-hero {
+	position: relative;
+	width: 100%;
+	background-image: url('../img/jelyfish-big.jpg');
+	background-position: center;
+	background-size: cover;
+	background-position: 10% 10%;
+	color: var(--light-gray);
+	z-index: 0;
+
+	.diving-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(49, 49, 49, 0.65);
+		z-index: -5;
+	}
+
+	.aboutus-card-title {
+		font-size: 25px;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	.aboutus-card-text {
+		font-size: 16px;
+		letter-spacing: 2px;
+	}
+}
+
+// ----------------Portfolio-----
+.portfolio {
+	.underline {
+		margin: 0 auto 40px;
+		width: 18%;
+		height: 4px;
+		background-color: var(--first-color);
+	}
+	h5 {
+		font-size: 28px;
+	}
+	p {
+		font-size: 18px;
+	}
+	.carousel-item {
+		position: relative;
+	}
+	.carousel-caption {
+		position: absolute;
+		left: 0;
+		right: 0;
+		padding: 30px 0;
+		background-color: rgba(0, 0, 0, 0.65);
+	}
+	.carousel-indicators {
+		padding-bottom: 20px;
+	}
+	.carousel-control-next-icon {
+		width: 3rem;
+		height: 3rem;
+	}
+	.carousel-control-prev-icon {
+		width: 3rem;
+		height: 3rem;
+	}
+}
+
+// media queries section
+
+@media (max-width: 320px) {
+	.fa-solid.fa-bars {
+		padding: 0px;
+		font-size: 12px;
+	}
+	.header {
+		h1 {
+			font-size: 16px;
+		}
+		.info-front {
+			font-size: 16px;
+		}
+	}
+	.header {
+		.hero-img {
+			background-image: url('/img/scuba-diving-small.jpg');
+		}
+	}
+
+	.aboutus-hero {
+		background-image: url('/img/jelyfish-small.jpg');
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		.hero-img {
+			background-image: url('/img/scuba-diving-big.jpg');
+		}
+		h1 {
+			font-size: 42px;
+		}
+		.info-front {
+			font-size: 20px;
+		}
+	}
+	.aboutus-hero {
+		background-image: url('/img/jelyfish-big.jpg');
+	}
+}
+
+@media (min-width: 1200px) {
+	.header {
+		.hero-img {
+			background-image: url('../img/scuba-diving-big.jpg');
+		}
+	}
+}

@@ -1,0 +1,333 @@
+:root {
+  --first-color: #039dff;
+  --white-color: white;
+  --light-gray: #ddd;
+}
+
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 13, 110, 253;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans",
+  	Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+  --bs-border-width: 1px;
+  --bs-border-style: solid;
+  --bs-border-color: #dee2e6;
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --bs-border-radius: 0.375rem;
+  --bs-border-radius-sm: 0.25rem;
+  --bs-border-radius-lg: 0.5rem;
+  --bs-border-radius-xl: 1rem;
+  --bs-border-radius-2xl: 2rem;
+  --bs-border-radius-pill: 50rem;
+  --bs-link-color: white;
+  --bs-link-hover-color: var(--first-color);
+  --bs-code-color: #d63384;
+  --bs-highlight-bg: #fff3cd;
+}
+
+.card {
+  --bs-card-border-radius: 20px;
+  --bs-card-inner-border-radius: 20px;
+}
+
+.nav-link {
+  --bs-nav-link-color: white;
+  --bs-nav-link-hover-color: var(--first-color);
+}
+
+*,
+* ::before,
+*::after * {
+  box-sizing: border-box;
+  margin: 0;
+  top: 0;
+}
+
+html {
+  scroll-padding-top: 112px;
+}
+
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar {
+  --bs-navbar-active-color: var(--first-color);
+  z-index: 5;
+  transition: background-color 0.7s;
+}
+
+.container .nav-link {
+  text-transform: uppercase;
+}
+.container .navbar-brand {
+  margin: 0;
+}
+.container .ti {
+  font-size: 60px;
+  margin-right: 10px;
+  color: var(--white-color);
+}
+.container .fa-bars {
+  color: var(--white-color);
+  padding: 10px;
+  font-size: 30px;
+}
+
+.blue-text-logo {
+  color: var(--first-color);
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.blue-text-front {
+  color: var(--first-color);
+  font-size: 70px;
+  font-weight: 800;
+  text-shadow: 2px 10px 14px rgba(13, 84, 190, 0.8);
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+}
+
+.header {
+  color: var(--white-color);
+}
+.header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/scuba-diving-big.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+.header .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
+}
+.header .info-front {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.header .btn-outline-light {
+  text-transform: uppercase;
+}
+.header .fa-chevron-down {
+  position: absolute;
+  bottom: 20px;
+  font-size: 34px;
+  left: 50%;
+  transform: translate(-50%);
+  color: var(--white-color);
+}
+
+.aboutus .underline {
+  margin: 0 auto 40px;
+  width: 12%;
+  height: 4px;
+  background-color: var(--first-color);
+}
+.aboutus .fa-solid,
+.aboutus .fa-brands {
+  margin-top: 20px;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.75);
+}
+.aboutus .aboutus-card-title {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.aboutus .aboutus-card-text {
+  font-size: 14px;
+}
+.aboutus .aboutus-hover:hover p,
+.aboutus .aboutus-hover:hover .fa {
+  color: var(--first-color);
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 46%;
+  height: 4px;
+  background-color: var(--first-color);
+}
+
+.diver {
+  width: 100%;
+  margin: 10px 0px;
+  border: 3px solid var(--first-color);
+  border-radius: 25px;
+}
+
+.aboutus-hero {
+  position: relative;
+  width: 100%;
+  background-image: url("../img/jelyfish-big.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position: 10% 10%;
+  color: var(--light-gray);
+  z-index: 0;
+}
+.aboutus-hero .diving-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(49, 49, 49, 0.65);
+  z-index: -5;
+}
+.aboutus-hero .aboutus-card-title {
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.aboutus-hero .aboutus-card-text {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.portfolio .underline {
+  margin: 0 auto 40px;
+  width: 18%;
+  height: 4px;
+  background-color: var(--first-color);
+}
+.portfolio h5 {
+  font-size: 28px;
+}
+.portfolio p {
+  font-size: 18px;
+}
+.portfolio .carousel-item {
+  position: relative;
+}
+.portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 30px 0;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+.portfolio .carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+}
+.portfolio .carousel-control-prev-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (max-width: 320px) {
+  .fa-solid.fa-bars {
+    padding: 0px;
+    font-size: 12px;
+  }
+  .header h1 {
+    font-size: 16px;
+  }
+  .header .info-front {
+    font-size: 16px;
+  }
+  .header .hero-img {
+    background-image: url("/img/scuba-diving-small.jpg");
+  }
+  .aboutus-hero {
+    background-image: url("/img/jelyfish-small.jpg");
+  }
+}
+@media (min-width: 768px) {
+  .header .hero-img {
+    background-image: url("/img/scuba-diving-big.jpg");
+  }
+  .header h1 {
+    font-size: 42px;
+  }
+  .header .info-front {
+    font-size: 20px;
+  }
+  .aboutus-hero {
+    background-image: url("/img/jelyfish-big.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .header .hero-img {
+    background-image: url("../img/scuba-diving-big.jpg");
+  }
+}/*# sourceMappingURL=main.css.map */
