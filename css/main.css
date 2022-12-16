@@ -130,6 +130,10 @@ body {
   font-size: 30px;
 }
 
+.logoText {
+  color: var(--white-color);
+}
+
 .blue-text-logo {
   color: var(--first-color);
   font-size: 36px;
