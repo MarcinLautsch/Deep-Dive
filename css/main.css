@@ -85,6 +85,10 @@
   --bs-nav-link-hover-color: var(--first-color);
 }
 
+.navbar-brand {
+  --bs-navbar-brand-color: var(--white-color);
+}
+
 *,
 * ::before,
 *::after * {
@@ -128,10 +132,6 @@ body {
   color: var(--white-color);
   padding: 10px;
   font-size: 30px;
-}
-
-.logoText {
-  color: var(--white-color);
 }
 
 .blue-text-logo {
