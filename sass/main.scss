@@ -323,6 +323,62 @@ h2 {
 	}
 }
 
+// -----sekcja Team---
+.team {
+	position: relative;
+	background-image: url(../img/team/bgTeam.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+
+	h2 {
+		color: var(--white-color);
+	}
+
+	i {
+		padding: 10px;
+	}
+
+	.underline {
+		width: 14%;
+	}
+	.card {
+		transition: transform 0.3s;
+		border: 3px solid var(--first-color);
+		img {
+			height: 25%;
+			object-fit: cover;
+		}
+		.card-text {
+			text-align: center;
+		}
+		h5 {
+			color: var(--bs-primary);
+			text-align: center;
+			font-weight: 700;
+			margin-bottom: 15px;
+			text-transform: uppercase;
+		}
+	}
+
+	.card:hover {
+		transform: scale(0.94);
+	}
+
+	.bg-team {
+		top: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+		z-index: -5;
+	}
+
+	.logo-team {
+		color: var(--bs-primary);
+	}
+}
+
 // media queries section
 
 @media (max-width: 320px) {
