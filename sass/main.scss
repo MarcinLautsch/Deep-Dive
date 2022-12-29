@@ -365,7 +365,7 @@ h2 {
 			color: var(--bs-primary);
 			text-align: center;
 			font-weight: 700;
-			margin-bottom: 25px;
+			margin-bottom: 10px;
 			text-transform: uppercase;
 		}
 		.card-footer {
@@ -387,15 +387,106 @@ h2 {
 	}
 
 	.logo-team {
+		font-size: 22px;
 		color: var(--bs-primary);
+		text-shadow: 2px 2px 7px rgba(44, 44, 44, 0.8);
 	}
+}
+
+// ----sekcja osiągnięcia---
+
+.achievements {
+	background: var(--color-achiev);
+
+	h2 {
+		font-weight: 600;
+	}
+	.underline {
+		width: 15%;
+	}
+
+	.fas {
+		font-size: 48px;
+		color: var(--white-color);
+		text-shadow: 0 0 9px #000;
+	}
+	.achievement-number {
+		margin-top: 18px;
+		font-size: 26px;
+		font-weight: 600;
+	}
+	.achievement-text {
+		margin-top: 5px;
+		font-size: 16px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+}
+
+// ----- sekcja kontakt------
+
+.contact {
+	position: relative;
+	background-image: url('../img/dahab_bg.jpg');
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-position-y: 60%;
+	background-attachment: fixed;
+	z-index: 0;
+
+	h2 {
+		letter-spacing: 2px;
+		font-size: 34px;
+		font-weight: 700;
+		color: var(--light-gray);
+	}
+	.underline {
+		width: 20%;
+	}
+
+	.fab {
+		font-size: 36px;
+		padding: 16px;
+		color: var(--bs-primary);
+		transition: color 0.3s;
+		text-shadow: 0 0 12px rgba(255, 255, 255, 0.65);
+	}
+
+	h3 {
+		margin-bottom: 20px;
+		letter-spacing: 2px;
+		color: var(--light-gray);
+		text-transform: uppercase;
+	}
+	.info-contact {
+		font-size: 20px;
+		color: var(--light-gray);
+	}
+}
+
+.fab:hover {
+	color: var(--light-gray);
+}
+
+.contact-shadow {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.65);
+	z-index: -5;
+}
+
+.contact-us {
+	display: flex;
+	align-items: center;
 }
 
 // media queries section
 
 @media (max-width: 320px) {
 	.fa-solid.fa-bars {
-		padding: 0px;
 		font-size: 12px;
 	}
 	.header {
@@ -441,17 +532,21 @@ h2 {
 	.team {
 		.card {
 			.card-text {
-				font-size: 14px;
+				font-size: 11px;
 			}
 		}
 	}
 }
 
 @media (min-width: 768px) {
+	h5 {
+		font-size: 16px;
+	}
+
 	.team {
 		.card {
 			.card-text {
-				font-size: 14px;
+				font-size: 11px;
 			}
 		}
 	}
@@ -476,7 +571,7 @@ h2 {
 	.team {
 		.card {
 			.card-text {
-				font-size: 16px;
+				font-size: 13px;
 			}
 		}
 	}
