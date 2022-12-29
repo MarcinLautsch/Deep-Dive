@@ -81,10 +81,11 @@
 	--bs-card-border-radius: 20px;
 	--bs-card-inner-border-radius: 20px;
 	--bs-card-border-color: var(--first-color);
+	--bs-card-border-width: 2px;
 }
 
 .nav-link {
-	--bs-nav-link-color: white;
+	--bs-nav-link-color:var(--white-color);
 	--bs-nav-link-hover-color: var(--first-color);
 }
 

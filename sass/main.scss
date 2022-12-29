@@ -331,6 +331,11 @@ h2 {
 	background-attachment: fixed;
 	z-index: 0;
 
+	.card-group > .card {
+		border: 3px solid var(--first-color);
+		transition: transform 0.3s;
+	}
+
 	h2 {
 		color: var(--white-color);
 	}
@@ -340,24 +345,34 @@ h2 {
 	}
 
 	.underline {
-		width: 14%;
+		width: 10%;
 	}
 	.card {
-		transition: transform 0.3s;
-		border: 3px solid var(--first-color);
 		img {
 			height: 25%;
 			object-fit: cover;
 		}
+		.krystian {
+			object-position: 0% 35%;
+		}
+
+		.card-body {
+			height: 250px;
+		}
+
 		.card-text {
+			font-size: 16px;
 			text-align: center;
 		}
 		h5 {
 			color: var(--bs-primary);
 			text-align: center;
 			font-weight: 700;
-			margin-bottom: 15px;
+			margin-bottom: 25px;
 			text-transform: uppercase;
+		}
+		.card-footer {
+			background: rgb(188, 199, 212);
 		}
 	}
 
@@ -428,9 +443,4 @@ h2 {
 			background-image: url('../img/scuba-diving-big.jpg');
 		}
 	}
-}
-
-.card-group > .card + .card {
-	margin-left: 0;
-	border-left: 1px solid var(--first-color);
 }
