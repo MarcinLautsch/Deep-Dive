@@ -352,9 +352,6 @@ h2 {
 			height: 25%;
 			object-fit: cover;
 		}
-		.krystian {
-			object-position: 0% 35%;
-		}
 
 		.card-body {
 			height: 250px;
@@ -420,7 +417,45 @@ h2 {
 	}
 }
 
+@media (min-width: 320px) {
+	.team {
+		.card {
+			.card-text {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+@media (min-width: 370px) {
+	.team {
+		.card {
+			.card-text {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.team {
+		.card {
+			.card-text {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
 @media (min-width: 768px) {
+	.team {
+		.card {
+			.card-text {
+				font-size: 14px;
+			}
+		}
+	}
+
 	.header {
 		.hero-img {
 			background-image: url('/img/scuba-diving-big.jpg');
@@ -437,10 +472,38 @@ h2 {
 	}
 }
 
+@media (min-width: 992px) {
+	.team {
+		.card {
+			.card-text {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
 @media (min-width: 1200px) {
+	.team {
+		.card {
+			.card-text {
+				font-size: 14px;
+			}
+		}
+	}
+
 	.header {
 		.hero-img {
 			background-image: url('../img/scuba-diving-big.jpg');
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.team {
+		.card {
+			.card-text {
+				font-size: 16px;
+			}
 		}
 	}
 }
