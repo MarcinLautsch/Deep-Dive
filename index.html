@@ -18,6 +18,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -25,8 +26,8 @@
 
     <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3">
         <div class="container">
-            <a class="navbar-brand " href="#"><i class="ti ti-scuba-mask"></i>Diving<span
-                    class="blue-text-logo">Deep</span></a>
+            <a class="navbar-brand " href="#"><i class="ti ti-scuba-mask"></i><span
+                    class="white-text-logo">Diving</span><span class="blue-text-logo">Deep</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
@@ -50,11 +51,14 @@
         <div class="hero-img">
             <div class="hero-shadow"></div>
             <div class="hero-text">
-                <h1>Witajcie w świecie głębin Diving <span class="blue-text-front">Deep</span></h1>
-                <p class="info-front">Z nami osiągniesz dno i nie tylko :)</p>
-                <a href="#aboutus" type="button" class="btn btn-outline-light">Poznaj Nas Głębiej :)</a>
+                <h1 data-aos="fade-up" data-aos-delay="200">Witajcie w świecie głębin Diving <span
+                        class="blue-text-front">Deep</span></h1>
+                <p data-aos="fade-up" data-aos-delay="400" class="info-front">Z nami osiągniesz dno i nie tylko :)</p>
+                <a data-aos="fade-up" data-aos-delay="600" href="#aboutus" type="button"
+                    class="btn btn-outline-light">Poznaj Nas Głębiej
+                    :)</a>
             </div>
-            <a href="#aboutus"><i class="fa-sharp fa-solid fa-chevron-down"></i></a>
+            <a href="#aboutus"><i class="fa-sharp fa-solid fa-chevron-down bounce-top"></i></a>
 
         </div>
     </header>
@@ -69,37 +73,37 @@
                 <div class="underline"></div>
 
                 <div class="row ">
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="200">
                         <p><i class="fa fa-solid fa-mobile-screen-button mb-1"></i></p>
                         <p class="aboutus-card-title mb-1">Team</p>
                         <p class="aboutus-card-text">Kontak</p>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="300">
                         <p><i class="fa fa-solid fa-globe mb-1"></i></p>
                         <p class="aboutus-card-title mb-1">lokalizacje</p>
                         <p class="aboutus-card-text">Wyprawy w niesamowite miejsca</p>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="400">
                         <p><i class="fa fa-solid fa-ship mb-1"></i></p>
                         <p class="aboutus-card-title mb-1">wraki</p>
                         <p class="aboutus-card-text">Wyprawy na wraki z całego świata</p>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="500">
                         <p><i class="fa fa-brands fa-octopus-deploy mb-1"></i></p>
                         <p class="aboutus-card-title mb-1">podwodni mieszkańcy</p>
                         <p class="aboutus-card-text">niesamowite zierzęta</p>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="600">
                         <p><i class="fa fa-solid fa-mountain-sun mb-1"></i></p>
                         <p class="aboutus-card-title mb-1">jaskinie</p>
                         <p class="aboutus-card-text">niesamowite nurkownia</p>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="700">
                         <p><i class="fa fa-solid fa-burger mb-1"></i></p>
                         <p class="aboutus-card-title mb-1">lubimy dobre jedzenie</p>
                         <p class="aboutus-card-text">Lubimy dobrze zjeść przed naszymi wyprawami :)</p>
@@ -121,25 +125,29 @@
 
                 <div class="row">
 
-                    <div class="col-sm-6 col-md-4 col-lg-3 mt-5 text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 col-lg-3 mt-5 text-center aboutus-hover" data-aos="zoom-in-up"
+                        data-aos-delay="300">
                         <p class="aboutus-card-title mb-1">recreational</p>
                         <div><img src="./img/single.jpg" alt="nurek rekreacyjny" class="diver"></div>
                         <p class="aboutus-card-text">konfiguracja</p>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 col-lg-3 mt-5  text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 col-lg-3 mt-5  text-center aboutus-hover" data-aos="zoom-in-down"
+                        data-aos-delay="600">
                         <p class="aboutus-card-title mb-1">Twin Set</p>
                         <div><img src="./img/twinset.jpg" alt="nurkowie w twinach" class="diver"></div>
                         <p class="aboutus-card-text">konfiguracja</p>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 col-lg-3 mt-5  text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 col-lg-3 mt-5  text-center aboutus-hover" data-aos="zoom-in-up"
+                        data-aos-delay="900">
                         <p class="aboutus-card-title mb-1">sidemount</p>
                         <div><img src="./img/sidemount.jpg" alt="nurkek w sidmount" class="diver"></div>
                         <p class="aboutus-card-text">konfiguracja</p>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 col-lg-3 mt-5  text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 col-lg-3 mt-5  text-center aboutus-hover" data-aos="zoom-in-down"
+                        data-aos-delay="1200">
                         <p class="aboutus-card-title mb-1">rebreather</p>
                         <div><img src="./img/rebrather.jpg" alt="nurkek w sidmount" class="diver"></div>
                         <p class="aboutus-card-text">konfiguracja</p>
@@ -336,7 +344,7 @@
                 <div class="price-wrap">
 
                     <div class="col-md-6 col-xl-3">
-                        <div class="price-box">
+                        <div class="price-box" data-aos="flip-left" data-aos-delay="200">
                             <h3>PAKIET 1 DZIEŃ 2 NURKOWANIA</h3>
                             <hr>
                             <p><span><i class="icon ti ti-scuba-mask"></i><i
@@ -355,7 +363,7 @@
                     </div>
 
                     <div class="col-md-6 col-xl-3">
-                        <div class="price-box">
+                        <div class="price-box" data-aos="flip-left" data-aos-delay="300">
                             <h3>PAKIET 2 DNI 4 NURKOWANIA</h3>
                             <hr>
                             <p><span><i class="icon ti ti-scuba-mask"></i><i
@@ -374,7 +382,7 @@
                     </div>
 
                     <div class="col-md-6 col-xl-3">
-                        <div class="price-box">
+                        <div class="price-box" data-aos="flip-left" data-aos-delay="400">
                             <h3>PAKIET 3 DNI 6 NURKOWAŃ</h3>
                             <hr>
                             <p><span><i class="icon ti ti-scuba-mask"></i><i
@@ -393,7 +401,7 @@
                     </div>
 
                     <div class="col-md-6 col-xl-3">
-                        <div class="price-box">
+                        <div class="price-box" data-aos="flip-left" data-aos-delay="500">
                             <h3>PAKIET 4 DNI 8 NURKOWAŃ</h3>
                             <hr>
                             <p><span><i class="icon ti ti-scuba-mask"></i><i
@@ -412,7 +420,7 @@
                     </div>
 
                     <div class="col-md-6 col-xl-3">
-                        <div class="price-box">
+                        <div class="price-box" data-aos="flip-left" data-aos-delay="600">
                             <h3>PAKIET 5 DNI 10 NURKOWAŃ</h3>
                             <hr>
                             <p><span><i class="icon ti ti-scuba-mask"></i><i
@@ -431,7 +439,7 @@
                     </div>
 
                     <div class="col-md-6 col-xl-3">
-                        <div class="price-box">
+                        <div class="price-box" data-aos="flip-left" data-aos-delay="800">
                             <h3>PAKIET 7 DNI 14 NURKOWAŃ</h3>
                             <hr>
                             <p><span><i class="icon ti ti-scuba-mask"></i><i
@@ -581,31 +589,31 @@
                 <div class="row text-center achievements-list">
 
 
-                    <div class="col-md-6 col-lg-4 col-xl-2 achievement">
+                    <div class="col-md-6 col-lg-4 col-xl-2 achievement" data-aos="zoom-in" data-aos-delay="100">
                         <i class="fas fa-thumbs-up"></i>
                         <p class="achievement-number">100%</p>
                         <p class="achievement-text">zadowolonych klientów</p>
                     </div>
 
-                    <div class="col-md-6 col-lg-4 col-xl-2 achievement">
+                    <div class="col-md-6 col-lg-4 col-xl-2 achievement" data-aos="zoom-in" data-aos-delay="400">
                         <i class="fas fa-trophy"></i>
                         <p class="achievement-number">47</p>
                         <p class="achievement-text">zdobytych nagród</p>
                     </div>
 
-                    <div class="col-md-6 col-lg-4 col-xl-2 achievement">
+                    <div class="col-md-6 col-lg-4 col-xl-2 achievement" data-aos="zoom-in" data-aos-delay="100">
                         <i class="fas fa-user-friends"></i>
                         <p class="achievement-number">17</p>
                         <p class="achievement-text">pracowników</p>
                     </div>
 
-                    <div class="col-md-6 col-lg-4 col-xl-2 achievement">
+                    <div class="col-md-6 col-lg-4 col-xl-2 achievement" data-aos="zoom-in" data-aos-delay="600">
                         <i class="fas fa-ship"></i>
                         <p class="achievement-number">21</p>
                         <p class="achievement-text">odkrytych miejsc</p>
                     </div>
 
-                    <div class="col-md-6 col-lg-4 col-xl-2 achievement">
+                    <div class="col-md-6 col-lg-4 col-xl-2 achievement" data-aos="zoom-in" data-aos-delay="800">
                         <i class="fas fa-share-alt"></i>
                         <p class="achievement-number">3200</p>
                         <p class="achievement-text">fanów w social media</p>
@@ -659,6 +667,12 @@
 
     </main>
 
+    <!-- ---footer < stopka >--- -->
+
+    <footer class="bg-dark text-light py-3 text-center">
+        <p class="mb-0">&copy; 2022 | DivingDeep</p>
+    </footer>
+
 
 
 
@@ -672,6 +686,8 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/slicksettings.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
