@@ -402,6 +402,8 @@ h2 {
 
 .achievements {
 	background: var(--color-achiev);
+	border-top: 4px solid var(--price);
+	border-bottom: 4px solid var(--price);
 
 	h2 {
 		font-weight: 600;
